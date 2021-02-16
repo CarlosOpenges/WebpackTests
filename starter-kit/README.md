@@ -1,21 +1,21 @@
 # Instructions to replicate this test
 
-/* Node must be pre-installed */
-/* Version 14.15.4 */
+* Node must be pre-installed
+In my box Node Version is 14.15.4
 
-/* Install Webpack globally */
+* Install Webpack globally
 npm install --global webpack webpack-cli
 
-/* Inside project's folder */
+* Inside project's folder
 
-/* Init npm */
+* Init npm
 npm Init
-/* (--yes: options by default) */
+(--yes: options by default)
 
-/* Install Webpack on project */
+* Install Webpack on project
 npm i -D webpack webpack-cli
 
-/* Install Babel on project */
+* Install Babel on project
 npm i -D babel-loader @babel/core @babel/preset-env
 
-/*  */
+* dodo
