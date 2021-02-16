@@ -14,3 +14,4 @@ npm i -D webpack webpack-cli
 /* Install Babel on project */
 npm i -D babel-loader @babel/core @babel/preset-env
 
+/*  */
