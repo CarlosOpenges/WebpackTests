@@ -10,6 +10,8 @@ lerna-debug.log*
 # Dependency directories
 node_modules/
 starter-kit-babel/node_modules/
+starter-kit-babel-html/node_modules/
+starter-kit-babel-html-css/node_modules/
 
 # Optional npm cache directory
 .npm
