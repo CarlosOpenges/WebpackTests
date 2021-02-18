@@ -11,4 +11,4 @@ In my box Node Version is 14.15.4
 
 * Install Webpack on project: npm i -D webpack webpack-cli
 
-* Install Babel on project: npm i -D babel-loader @babel/core @babel/preset-env
+* Install Babel on project: npm i -D babel-loader @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/plugin-proposal-private-methods

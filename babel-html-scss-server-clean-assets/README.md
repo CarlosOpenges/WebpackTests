@@ -25,4 +25,6 @@ In my box Node Version is 14.15.4
 
 * Install SASSloader on project: npm i -D sass-loader sass webpack
 
-* Install new version of chokidar on project: npm i -D chokidar
+* Install clean-webpack-plugin on project: npm i -D clean-webpack-plugin
+
+ 

@@ -2,6 +2,7 @@ const { Module } = require("webpack");
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
     // entry: {},
     // output: {},
     module: {
@@ -26,8 +27,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
+            title: 'Webpack Tutorial',  // Not working
             template: './src/template.html',
-            filename: './index.html'
+            filename: './index.html' // output file
         })
     ]
 }

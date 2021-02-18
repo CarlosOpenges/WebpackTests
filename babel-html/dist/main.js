@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("var arr = [1, 2, 3];\n\nvar codeES6 = function codeES6() {\n  var _console;\n\n  return (_console = console).log.apply(_console, arr);\n};\n\ncodeES6(); //console.log('Hello world');\n\n//# sourceURL=webpack://webpacktests/./src/index.js?");
+eval("var arr = [1, 2, 3];\n\nvar codeES6 = function codeES6() {\n  var _console;\n\n  return (_console = console).log.apply(_console, arr);\n};\n\ncodeES6(); //console.log('Hello world');\n// Create heading node\n\nvar heading = document.createElement('h1');\nheading.textContent = 'Interesting!'; // Append heading node to the DOM\n\nvar app = document.querySelector('#root');\napp.append(heading);\n\n//# sourceURL=webpack://webpacktests/./src/index.js?");
 
 /***/ })
 

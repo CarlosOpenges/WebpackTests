@@ -2,10 +2,19 @@ const { Module } = require("webpack");
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const path = require('path');
 
 module.exports = {
-    // entry: {},
-    // output: {},
+    entry: './src/index.js',
+    output: {
+        /**
+         * With zero configuration,
+         *   clean-webpack-plugin will remove files inside the directory below
+         */
+        path: path.resolve(__dirname, 'dist'),
+    },
     devtool: 'inline-source-map',
     module: {
         rules: [
@@ -24,6 +33,17 @@ module.exports = {
                         options: { minimize: true }
                     }
                 ]
+            },
+            // https://www.taniarascia.com/how-to-use-webpack/
+            // Images
+            {
+              test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+              type: 'asset/resource',
+            },
+            // Fonts and SVGs
+            {
+              test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+              type: 'asset/inline',
             },
             {
                 test: /\.s?css$/i,
@@ -44,8 +64,6 @@ module.exports = {
                     },
                 ]
             }
-            // To minimize css use CssMinimizerWebpackPlugin
-            // https://webpack.js.org/plugins/css-minimizer-webpack-plugin/
         ]
     },
     optimization: {
@@ -58,6 +76,7 @@ module.exports = {
         ],
       },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebPackPlugin({
             title: 'Webpack Tutorial',  // Not working
             template: './src/template.html',
