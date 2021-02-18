@@ -11,16 +11,16 @@ module.exports = {
     "extends": "eslint:recommended", // common rules already set
     "rules": {
         // enable additional rules
-        "quotes": ["error", "single"],
-        "semi": ["error", "always"],
+        "@babel/quotes": ["error", "single"],
+        "@babel/semi": ["error", "always"],
         // override configuration set by extending "eslint:recommended"
-        "no-empty": "warn",
-        "no-cond-assign": ["error", "always"],
+        "@babel/no-empty": "warn",
+        "@babel/no-cond-assign": ["error", "always"],
         // disable rules from base configurations
-        "for-direction": "off",
+        "@babel/for-direction": "off",
         // unknown
-        //"no-console": "off",
-        //"strict": ["error", "global"],
-        //"curly": "warn"
+        //"@babel/no-console": "off",
+        //"@babel/strict": ["error", "global"],
+        //"@babel/curly": "warn"
     }
 };
