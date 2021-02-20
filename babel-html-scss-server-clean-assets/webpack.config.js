@@ -35,9 +35,14 @@ module.exports = {
                 ]
             },
             // https://www.taniarascia.com/how-to-use-webpack/
+            // asset options
+            // asset/resource emits a separate file and exports the URL
+            // asset/inline exports a data URI of the asset
+            // asset/source exports the source code of the asset
+            // asset automatically chooses between exporting a data URI and emitting a separate file.
             // Images
             {
-              test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+              test: /\.(?:ico|gif|png|jpe?g|webp|pdf|txt|mp3|mp4|avi)$/i,
               type: 'asset/resource',
             },
             // Fonts and SVGs
