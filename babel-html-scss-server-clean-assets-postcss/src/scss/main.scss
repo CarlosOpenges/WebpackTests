@@ -1,0 +1,27 @@
+@font-face {
+    font: {
+        family:'Chalet';
+        style: normal;
+        weight: normal;        
+    }
+    src:url('../fonts/Chalet.eot');
+    src: url('../fonts/Chalet.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Chalet.woff') format('woff'),
+         url('../fonts/Chalet.ttf') format('truetype'),
+         url('../fonts/Chalet.svg#Chalet') format('svg');
+}
+$font-size: 1rem;
+//$font-color: lch(103 105 40);
+$font-color: #000;
+
+html {
+    font: {
+        family: 'Chalet', sans-serif;
+        size: $font-size;
+        color: $font-color;
+    }
+    background-color: bisque;
+}
+body {
+    background-color: rgba($color: #eec0c0, $alpha: .75);
+}
