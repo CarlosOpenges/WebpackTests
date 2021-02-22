@@ -1,12 +1,6 @@
 # PHP Storm
 .idea/
 
-# Logs
-logs
-*.log
-npm-debug.log*
-lerna-debug.log*
-
 # Dependency directories
 node_modules/
 babel/node_modules/
@@ -15,6 +9,16 @@ babel-html-css/node_modules/
 babel-html-css-server/node_modules/
 babel-html-scss-server/node_modules/
 babel-html-scss-server-clean/node_modules/
+babel-html-scss-server-clean-assets/node_modules/
+babel-html-scss-server-clean-assets-postcss/node_modules/
+babel-html-scss-server-clean-assets-postcss-imageLoader/node_modules/
+babel-html-scss-server-clean-assets-postcss-imageLoader-entries/node_modules/
+full-vanillajs-react-vuejs-typescript/node_modules/
+
+babel-scss-assets-postcss-imageLoader-obfuscator/
+
+test/
+test2/
 
 # Optional npm cache directory
 .npm
