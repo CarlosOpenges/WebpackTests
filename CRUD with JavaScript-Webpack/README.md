@@ -21,25 +21,12 @@ In my box Node Version is 14.15.4
 * Install a Dev server on project: npm i -D webpack-dev-server
 
 * Install Styleloader on project: npm i -D style-loader
-
 * Install Css Minimizer Plugin on project: npm i -D css-minimizer-webpack-plugin
 
 * Install SASSloader on project: npm i -D sass-loader sass webpack
 
 * Install clean-webpack-plugin on project: npm i -D clean-webpack-plugin
 
-* Install PostCSS on project: npm i -D postcss-loader postcss postcss-preset-env
+ * Install PostCSS on project: npm i -D postcss-loader postcss postcss-preset-env
  
-* Install Image Loader/Compressor on project: npm i -D image-webpack-loader
-
-* Create multiple entry points
-
-* Install react on project: npm i react react-dom
-
-* Install babel presets for react on project: npm i -D @babel/preset-react  
-
-* Install TypeScript on project: npm i -D ts-loader typescript
-
-* Install react on project: npm i vue
-
-* Install Vue on project: npm i -D vue-loader vue-style-loader vue-template-compiler
+ * Install Image Loader/Compressor on project: npm i -D image-webpack-loader

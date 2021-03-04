@@ -6,11 +6,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const path = require('path');
 
-module.exports = {
+module.exports = {    
     entry: {
         js: './src/index.js',
-        vanilla: './src/index_vanilla.js',
-        react: './src/index_react.js'
+        todo: './src/to_do.js'
     },
     output: {
         /**
@@ -18,13 +17,12 @@ module.exports = {
          *   clean-webpack-plugin will remove files inside the directory below
          */
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
     },
     devtool: 'inline-source-map',
     module: {
         rules: [
             {
-                test: /\.js|jsx$/i,
+                test: /\.js$/i,
                 exclude: [/node_modules/, /dist/],
                 use: {
                     loader: 'babel-loader'
@@ -139,26 +137,18 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebPackPlugin({
-            title: 'Webpack Tutorial JS',  // Not working
+            title: 'Webpack Tutorial',
             template: './src/template.html',
             filename: './index.html',
             hash: true,
-            //chunks:['js', 'vanilla']
             chunks:['js']
         }),
         new HtmlWebPackPlugin({
-            title: 'Webpack Tutorial Vanilla',  // Not working
+            title: 'Webpack Tutorial',
             template: './src/template.html',
-            filename: './index_vanilla.html',
+            filename: './to-do.html',
             hash: true,
-            chunks:['vanilla']
-        }),
-        new HtmlWebPackPlugin({
-            title: 'Webpack Tutorial React',  // Not working
-            template: './src/template.html',
-            filename: './index_react.html',
-            hash: true,
-            chunks:['react']
+            chunks:['todo']
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
