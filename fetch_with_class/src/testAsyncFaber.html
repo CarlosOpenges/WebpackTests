@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		async function test(){
+			return new Promise(resol=>{
+				setTimeout(()=>{
+					resol(6)
+				}, 5000)
+			})
+		}
+		async function testCaller(){
+			const numb=9
+			const result=await test()
+			// const result=test()
+			console.log(numb, 'FT este e primero en async')
+			console.log(result, 'FT esto es el resutado')
+		}
+		testCaller()
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
