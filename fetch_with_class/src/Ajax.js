@@ -44,7 +44,9 @@ export class Ajax {
             }).catch(console.error)
         })
     }
-    get popo(){
-        return this.dataReceived;
+    find_user(user_id){
+        clg('Find user:', user_id);
+        clg('Typeof:', typeof this.dataReceived);
+        return this.dataReceived.findIndex(user => user.id === user_id);
     }
 }

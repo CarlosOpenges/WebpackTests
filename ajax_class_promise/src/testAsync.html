@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="module">
+
+		import {Users, Posts, CompareData} from './process/index.js'
+
+		const init=async ()=>{
+			const users=new Users()
+			await users.startRequest()
+
+			const posts=new Posts()
+			await posts.startRequest()
+
+			const compare=new CompareData(users, posts)
+			console.log(compare.popo, 'FT esto me llego ome hajajaja')
+		}
+		//para poder usar la propiedad async/await
+		//se tiene que usar dentro de una función con async
+		init()
+	</script>
+</head>
+<body>
+	Acá funciona bien sin necesidad de webPack
+</body>
+</html>
